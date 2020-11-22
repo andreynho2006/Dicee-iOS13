@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet var diceImageView1: UIImageView!
     @IBOutlet var diceImageView2: UIImageView!
     
+    @IBAction func rollButtonPressed(_ sender: UIButton) {
+        diceImageView1.image = #imageLiteral(resourceName: "DiceOne")
+        diceImageView2.image = #imageLiteral(resourceName: "DiceTwo")
+    }
     
     
     override func viewDidLoad() {
@@ -24,7 +28,7 @@ class ViewController: UIViewController {
         diceImageView1.image = #imageLiteral(resourceName: "DiceSix")
         diceImageView2.image = #imageLiteral(resourceName: "DiceFive")
         
-        diceImageView1.alpha = 0.5
+        //diceImageView1.alpha = 0.5
         
     }
 
