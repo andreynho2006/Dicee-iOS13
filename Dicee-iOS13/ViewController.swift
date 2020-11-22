@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // IBOutlet allows to reference a UI element
     @IBOutlet var diceImageView1: UIImageView!
     @IBOutlet var diceImageView2: UIImageView!
     
@@ -18,6 +19,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        //WHO          WHAT    VALUE
+        diceImageView1.image = #imageLiteral(resourceName: "DiceSix")
+        diceImageView2.image = #imageLiteral(resourceName: "DiceFive")
+        
+        diceImageView1.alpha = 0.5
         
     }
 
